@@ -1,0 +1,4 @@
+接口地址：
+http://wthrcdn.etouch.cn/weather_mini
+参数：
+city

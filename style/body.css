@@ -1,0 +1,165 @@
+html,body{
+    height: 100vh;
+    min-width: 1526px
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background:no-repeat center url("../pics/20220825-barnimages-3.jpg");
+    background-size:cover ;
+}
+.main .app{
+    width: 912px;
+    height: 550px;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* top */
+.main .app .top{
+    height: 80px;
+    border-bottom: 3px solid white;
+
+    position: relative;
+}
+
+.main .app .top .city{
+    width: 175px;
+    height: 55px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 55px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+
+    position: absolute;
+    left: 12px;
+    top: 13px;
+}
+
+.main .app .top .search{
+    width: 250px;
+    height: 70px;
+    /* background-color: azure; */
+
+    position: absolute;
+    right: 12px;
+    top: 6px;
+}
+.main .app .top .search input{
+    width: 200px;
+    height: 45px;
+    padding-left: 12px;
+    font-size: 16px;
+    border-radius:15px ;
+    border-color: rgba(134, 132, 132, 0.441);
+    outline: none;
+}
+.main .app .top .search button{
+    width: 50px;
+    height: 45px;
+    border: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+
+    position: absolute;
+    right: 36px;
+    top: 2px;
+}
+.main .app .top .search button i{
+    font-size: 30px;
+}
+.main .app .top .search .hot_city{
+    width: auto;
+    height: auto;
+    margin-left: 7px;
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: row;
+}
+.main .app .top .search .hot_city>a{
+    margin-right: 7px;
+    text-decoration: none;
+}
+
+/* content */
+.main .app .content{
+    height: 467px;
+    width: 100%;
+    position: relative;
+}
+.main .app .content .weeks{
+    height: 400px;
+    width: 100%;
+    background-color: aliceblue;   
+    
+    position: absolute;
+    top: 33px;
+
+    display: flex;
+    flex-direction: row;
+}
+.main .app .content .tip{
+    display: inline-block;
+    width: 900px;
+    height: 25px;
+    font-size: 14px;
+    font-weight: 450;
+
+    position: absolute;
+    bottom: 4px;
+    left: 7px;
+}
+.main .app .content .tip .tip_content{
+    display: inline-block;
+    font-weight: 550;
+}
+.main .app .content .weeks>li{
+    width: 24%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+
+    list-style-type: none;
+}
+.main .app .content .weeks>li:last-child{
+    border: none;
+}
+.main .app .content .weeks .day>div{
+    height: 200px;
+    width: 100%;
+    text-align: center;
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main .app .content .weeks .day div .weather_icon{
+    font-size: 45px;
+}
+.main .app .content .weeks .day div .weather_type{
+    font-size: 32px;
+    font-style: normal;
+}
+.main .app .content .weeks .day div .weather_day{
+    font-size:24px;
+    font-style: normal;
+}
